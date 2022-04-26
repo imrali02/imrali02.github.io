@@ -23,15 +23,6 @@ module.exports = function(grunt) {
                     ext: '.min.css'
                 }]
             },
-            lightbox: {
-                files: [{
-                    expand: true,
-                    cwd: 'lightbox/css',
-                    src: ['*.css', '!*.min.css'],
-                    dest: 'lightbox/css',
-                    ext: '.min.css'
-                }]
-            }
         },
         uglify: {
             main: {
