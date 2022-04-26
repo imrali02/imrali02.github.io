@@ -1,608 +1,434 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Outside - one page personal portfolio">
+    <meta name="keywords" content="Jakub Kwarciński, portfolio, frontend developer, Kraków, html, css, javascript, websites, graphic design, bootstrap">
+    <meta name="author" content="Jakub Kwarciński">
+
+    <title>Outside - Multipurpose personal page</title>
+
+    <!-- Lato Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Orbitron Font -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Font Linea -->
+    <link href="css/linea-arrows.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/linea-basic.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/linea-ecommerce.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/linea-software.min.css" media="screen" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles -->
+    <link href="css/yellow.css" media="screen" rel="alternate stylesheet" type="text/css" title="yellow">
+    <link href="css/gold.css" media="screen" rel="alternate stylesheet" type="text/css" title="gold">
+    <link href="css/pink.css" media="screen" rel="alternate stylesheet" type="text/css" title="pink">
+    <link href="css/orange.css" media="screen" rel="alternate stylesheet" type="text/css" title="orange">
+    <link href="css/brown.css" media="screen" rel="alternate stylesheet" type="text/css" title="brown">
+    <link href="css/red.css" media="screen" rel="alternate stylesheet" type="text/css" title="red">
+    <link href="css/violet.css" media="screen" rel="alternate stylesheet" type="text/css" title="violet">
+    <link href="css/silver.css" media="screen" rel="stylesheet" type="text/css" title="silver">
+    <link href="css/green.css" media="screen" rel="alternate stylesheet" type="text/css" title="green">
+    <link href="css/blue.css" media="screen" rel="alternate stylesheet" type="text/css" title="blue">
+
+     <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr-custom.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" href="img/logo-mini.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-mini.png" type="image/x-icon">
+
 </head>
-<body>
 
-<!-- Side Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
-  <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
-  <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-</nav>
+<body class="preview-page">
 
-<!-- Header -->
-<header class="w3-container w3-theme w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
-  <div class="w3-center">
-  <h4>trying new heading next</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">HvZ Player Tracker</h1>
-    <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN W3.CSS</button>
+    <div class="loader-overlay">
+        <div class="loader">
+            <div class="loader-icon">
+                <span class="icon icon-arrows-glide"></span>
+            </div>
+            <h3 class="loader-text">Loading</h3>
+        </div>
     </div>
-  </div>
-</header>
 
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"> 
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="w3-button w3-display-topright">×</span>
-        <h4>Oh snap! We just showed you a modal..</h4>
-        <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-      </header>
-      <div class="w3-padding">
-        <p>Cool huh? Ok, enough teasing around..</p>
-        <p>Go to our <a class="w3-btn" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-      </div>
-      <footer class="w3-container w3-theme-l1">
-        <p>Modal footer</p>
-      </footer>
+    <div class="sidebar">
+        <a class="sidebar-switcher" href="#" title="Color switcher">
+            <i class="fa fa-gear"></i>
+        </a>
+        <div class="sidebar-content">
+            <h4 class="sidebar-header">Color switcher</h4>
+            <a href="#" class="color-switcher bg-yellow" data-color="yellow"></a>
+            <a href="#" class="color-switcher bg-gold" data-color="gold"></a>
+            <a href="#" class="color-switcher bg-pink" data-color="pink"></a>
+            <a href="#" class="color-switcher bg-orange" data-color="orange"></a>
+            <a href="#" class="color-switcher bg-brown" data-color="brown"></a>
+            <a href="#" class="color-switcher bg-red" data-color="red"></a>
+            <a href="#" class="color-switcher bg-violet" data-color="violet"></a>
+            <a href="#" class="color-switcher bg-silver" data-color="silver"></a>
+            <a href="#" class="color-switcher bg-green" data-color="green"></a>
+            <a href="#" class="color-switcher bg-blue" data-color="blue"></a>
+        </div>
     </div>
-</div>
 
-<div class="w3-row-padding w3-center w3-margin-top">
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Responsive</h3><br>
-  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Built-in responsiveness</p>
-  <p>Mobile first fluid grid</p>
-  <p>Fits any screen sizes</p>
-  <p>PC Tablet and Mobile</p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Standard CSS</h3><br>
-  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
-  </div>
-</div>
-
-<div class="w3-third">
-  <div class="w3-card w3-container" style="min-height:460px">
-  <h3>Design</h3><br>
-  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Paper like design</p>
-  <p>Bold colors and shadows</p>
-  <p>Equal across platforms</p>
-  <p>Equal across devices</p>
-  </div>
-</div>
-</div>
-
-<div class="w3-container">
-<hr>
-<div class="w3-center">
-  <h2>Color Classes</h2>
-</div>
-
-<div class="w3-row">
-  <div class="w3-col w3-container m2 w3-red"><p>Red</p></div>
-  <div class="w3-col w3-container m2 w3-blue"><p>Blue</p></div>
-  <div class="w3-col w3-container m2 w3-blue-grey"><p>Blue Grey</p></div>
-  <div class="w3-col w3-container m2 w3-teal"><p>Teal</p></div>
-  <div class="w3-col w3-container m2 w3-yellow"><p>Yellow</p></div>
-  <div class="w3-col w3-container m2 w3-orange"><p>Orange</p></div>
-</div>
-
-<hr>
-<div class="w3-center">
-  <h2>Built-In Responsiveness</h2>
-  <p class="w3-large">Resize the page to see the effect!</p>
-</div>
-<br>
-
-<div class="w3-row w3-border">
-  <div class="w3-half w3-container w3-blue w3-border">
-    <h5>w3-half</h5>  
-    <p>The w3-half class uses half (50%) of the screen window.</p>
-    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-  </div>
-  <div class="w3-half w3-container">
-    <h5>w3-half</h5>  
-  </div>
-</div>
-<br>
-
-<div class="w3-row w3-border">
-  <div class="w3-third w3-container w3-green">
-    <h5>w3-third</h5>  
-    <p>The w3-third class uses one third (33.33%) of the screen widow.</p>
-    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-  </div>
-  <div class="w3-third w3-container">
-    <h5>w3-third</h5>  
-  </div>
-  <div class="w3-third w3-container">
-    <h5>w3-third</h5>  
-  </div>
-</div>
-<br>
-
-<div class="w3-row w3-border">
-  <div class="w3-quarter w3-container w3-red">
-    <h5>w3-quarter</h5>  
-    <p>The w3-quarter class uses one quarter (25%) of the screen window.</p>
-    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
-  </div>
-  <div class="w3-quarter w3-container">
-    <h5>w3-quarter</h5>  
-  </div>
-  <div class="w3-quarter w3-container">
-    <h5>w3-quarter</h5>  
-  </div>
-  <div class="w3-quarter w3-container">
-    <h5>w3-quarter</h5>  
-  </div>
-</div> 
-     
-<div class="w3-center">
-  <h2>Containers</h2>
-  <p>Use containers to create headers, sections and footers.</p>
-</div>   
-
-<header class="w3-container w3-blue-grey">
-  <h2>Header</h2>
-</header>
-
-<div class="w3-padding w3-white w3-display-container">
-  <span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright"><i class="fa fa-remove"></i></span>
-  <h2>London</h2>
-  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-  with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia,
-  its history going back to its founding by the Romans, who named it Londinium.</p>
-  <p>By the way, you can add a close icon to all containers if you want the ability to hide them. Look to your right!</p>
-</div>
-
-<footer class="w3-container w3-blue-grey">
-  <h5>Footer</h5>
-  <p class="w3-opacity">Footer information goes here</p>
-</footer>
-
-<hr>
-<div class="w3-center">
-  <h2>Color Themes</h2>
-  <p>The color themes have been designed to work harmoniously with each other.</p>
-</div>
-</div>
-
-<div class="w3-row-padding">
-
-<div class="w3-half">
-<div class="w3-card white">
-  <div class="w3-container w3-indigo">
-    <h3>Theme Indigo</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text-indigo">Movies 2014</h3>
-  </div>
-  <ul class="w3-ul w3-border-top">
-    <li>
-      <h3>Frozen</h3>
-      <p>The response to the animations was ridiculous</p>
-    </li>
-    <li>
-      <h3>The Fault in Our Stars</h3>
-      <p>Touching, gripping and genuinely well made</p>
-    </li>
-    <li>
-      <h3>The Avengers</h3>
-      <p>A huge success for Marvel and Disney</p>
-    </li>
-  </ul>
-  <div class="w3-container w3-indigo w3-large"><span class="w3-right">Next</span></div>
-</div>
-</div>
-
-<div class="w3-half">
-<div class="w3-card white">
-  <div class="w3-container w3-theme">
-    <h3>Theme</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text-theme">Movies 2014</h3>
-  </div>
-  <ul class="w3-ul w3-border-top">
-    <li>
-      <h3>Frozen</h3>
-      <p>The response to the animations was ridiculous</p>
-    </li>
-    <li>
-      <h3>The Fault in Our Stars</h3>
-      <p>Touching, gripping and genuinely well made</p>
-    </li>
-    <li>
-      <h3>The Avengers</h3>
-      <p>A huge success for Marvel and Disney</p>
-    </li>
-  </ul>
-  <div class="w3-container w3-theme w3-large"><span class="w3-right">Next</span></div>
-</div>
-</div>
-</div>
-
-<div class="w3-container w3-center">
-  <hr>
-  <h3>Paper-like Cards with Shadows</h3>
-</div>
-
-<div class="w3-row-padding"> 
-
-<div class="w3-third">
-<div class="w3-card">
-  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-  <div class="w3-container">
-  <p>w3-card</p>
-  </div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card-4">
-  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-  <div class="w3-container">
-  <p>w3-card-4</p>
-  </div>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card-4">
-  <img src="/w3images/car.jpg" alt="Car" style="width:100%">
-  <div class="w3-container">
-  <p>w3-card-4</p>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="w3-container">
-  <hr>
-  <div class="w3-center">
-    <h2>Tables</h2>
-    <p w3-class="w3-large">Don't worry. W3.CSS takes care of your tables.</p>
-  </div>
-<div class="w3-responsive w3-card-4">
-<table class="w3-table w3-striped w3-bordered">
-<thead>
-<tr class="w3-theme">
-  <th>First Name</th>
-  <th>Last Name</th>
-  <th>Points</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>Jill</td>
-  <td>Smith</td>
-  <td>50</td>
-</tr>
-<tr class="w3-white">
-  <td>Eve</td>
-  <td>Jackson</td>
-  <td>94</td>
-</tr>
-<tr>
-  <td>Adam</td>
-  <td>Johnson</td>
-  <td>67</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-<hr>
-<h2 class="w3-center">Forms and Lists</h2>
-</div>
-
-<div class="w3-row-padding">
-
-<div class="w3-half">
-<form class="w3-container w3-card-4">
-  <h2>Input Form</h2>
-  <div class="w3-section">      
-    <input class="w3-input" type="text" required>
-    <label>Name</label>
-  </div>
-  <div class="w3-section">      
-    <input class="w3-input" type="text" required>
-    <label>Email</label>
-  </div>
-  <div class="w3-section">      
-    <input class="w3-input" type="text" required>
-    <label>Subject</label>
-  </div>
-
-  <div class="w3-row">
-  <div class="w3-half">
-    <input id="milk" class="w3-check" type="checkbox" checked="checked">
-    <label>Milk</label>
-    <br>
-    <input id="sugar" class="w3-check" type="checkbox">
-    <label>Sugar</label>
-    <br>
-    <input id="lemon" class="w3-check" type="checkbox" disabled>
-    <label>Lemon (Disabled)</label>
-    <br><br>
-  </div>
-
-  <div class="w3-half">
-    <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
-    <label>Male</label>
-    <br>
-    <input id="female" class="w3-radio" type="radio" name="gender" value="female">
-    <label>Female</label>
-    <br>
-    <input id="unknown" class="w3-radio" type="radio" name="gender" value="" disabled>
-    <label> Don't know (Disabled)</label>
-  </div>
-  </div>
-</form>
-</div>
-<div class="w3-half">
-<div class="w3-card-4 w3-container">
-<h2>Lists</h2>
-<ul class="w3-ul w3-margin-bottom">
-  <li>Jill</li>
-  <li>Eve</li>
-  <li>Adam</li>
-</ul>
-<br>
-<ul class="w3-ul w3-border w3-hoverable">
-  <li class="w3-theme">Jill</li>
-  <li>Eve</li>
-  <li>Adam</li>
-  <li>Steve</li>
-</ul>
-<br>
-</div>
-</div>
-</div>
-<hr>
-
-<h2 class="w3-center">Progress Bars</h2>
-<div class="w3-container">
-
-<div class="w3-light-gray">
-  <div id="myBar" class="w3-center w3-padding w3-theme" style="width:5%">5%</div>
-</div><br>
-<button class="w3-btn w3-theme" onclick="move()">Click Me</button> 
-</div>
-<hr>
-
-<h2 class="w3-center">Slideshows</h2>
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<img class="mySlides w3-animate-opacity" src="/w3images/snow.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/lights.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/mountains.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/forest.jpg" style="width:100%">
-
-<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
-<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
-</div>
-
-<div class="w3-container">
-<hr>
-<h2 class="w3-center">Navigation</h2>
-
-<div class="w3-bar w3-theme">
-  <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 1</a>
-  <div class="w3-dropdown-hover">
-    <button class="w3-button w3-padding-16">
-      Dropdown <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 1</a>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 2</a>
-      <a href="javascript:void(0)" class="w3-bar-item w3-button">Link 3</a>
+    <div class="brand-container">
+        <a class="brand" href="index.html" title="Outside">
+            <span class="title">
+                Outside
+            </span>
+            <span class="icon icon-arrows-glide"></span>
+        </a>
     </div>
-  </div>
-</div>
-  
-<hr>
-<h2 class="w3-center">Accordions</h2>
-<button onclick="myAccFunc('Demo1')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 1</button>
-<div id="Demo1" class="w3-hide">
-  <div class="w3-container">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-</div>
-<button onclick="myAccFunc('Demo2')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 2</button>
-<div id="Demo2" class="w3-hide">
-  <a href="#" class="w3-button w3-block w3-left-align">Link 1</a>
-  <a href="#" class="w3-button w3-block w3-left-align">Link 2</a>
-  <a href="#" class="w3-button w3-block w3-left-align">Link 3</a>
-</div>
-<button onclick="myAccFunc('Demo3')" class="w3-padding-16 w3-theme w3-button w3-block w3-left-align">Open Section 3</button>
-<div id="Demo3" class="w3-hide w3-black">
-  <div class="w3-container">
-    <p>Accordion with Images:</p>
-    <img src="img_snowtops.jpg" style="width:30%;" class="w3-animate-zoom">
-    <p>French Alps</p>
-  </div>
-</div>
 
-<hr>
-<h2 class="w3-center">Tabs</h2>
-<div class="w3-border">
-<div class="w3-bar w3-theme">
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">London</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Paris</button>
-  <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">Tokyo</button>
-</div>
-
-<div id="London" class="w3-container city w3-animate-opacity">
-  <h2>London</h2>
-  <p>London is the capital city of England.</p>
-  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-</div>
-
-<div id="Paris" class="w3-container city w3-animate-opacity">
-  <h2>Paris</h2>
-  <p>Paris is the capital of France.</p> 
-  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
-</div>
-
-<div id="Tokyo" class="w3-container city w3-animate-opacity">
-  <h2>Tokyo</h2>
-  <p>Tokyo is the capital of Japan.</p>
-  <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
-</div>
-</div>
-
-<hr>
-<h2 class="w3-center">Buttons</h2>
-<div class="w3-center">
-  <br>
-  <a class="w3-button w3-theme">Button</a>
-  <a class="w3-button w3-theme">Button</a>
-  <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
-  <br><br>
-  <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
-  <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
-  <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
-</div>
-<br>
-<div class="w3-center">
-  <div class="w3-dropdown-hover">
-    <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
-    <div class="w3-dropdown-content w3-bar-block w3-border">
-      <a href="#" class="w3-bar-item w3-button">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <div class="section section-standard section-single-page section-promo section-preview" id="preview" style="background-image: url('img/hero-6.jpg')">
+        <div class="overlay"></div>
+        <div class="section-inner">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Choose a <span class="main-color">layout</span></h3>
+                    <div class="divider">//</div>
+                </div>
+                <div class="special-text text-center">
+                    <p>All of the sample <strong>layouts</strong> are <span class="highlight">included</span> with your <strong>download</strong>. Select an <strong>example</strong> layout below to <span class="highlight">preview</span>!</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-default.html" title="Default version">
+                                    <img class="img-responsive" src="img/preview-default.png" alt="Default version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-default.html" title="Default version">Default version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Default version for frontend developer, programmer, agency, office.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-light.html" title="Light version">
+                                    <img class="img-responsive" src="img/preview-light.png" alt="Light version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-light.html" title="Light version">Light version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Light version with white sections backgrounds.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-dark.html" title="Dark version">
+                                    <img class="img-responsive" src="img/preview-dark.png" alt="Dark version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-dark.html" title="Dark version">Dark version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Dark version with dark gray sections backgrounds.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-sm hidden-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-beauty.html" title="Beauty version">
+                                    <img class="img-responsive" src="img/preview-beauty.png" alt="Beauty version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-beauty.html" title="Beauty version">Beauty version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for stylist, model, lingerie shop.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-medical.html" title="Medical version">
+                                    <img class="img-responsive" src="img/preview-medical.png" alt="Medical version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-medical.html" title="Medical version">Medical version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for doctor, dentist, hospital.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-culinary.html" title="Culinary version">
+                                    <img class="img-responsive" src="img/preview-culinary.png" alt="Culinary version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-culinary.html" title="Culinary version">Culinary version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for chef, baker, restaurant.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-culture.html" title="Culture version">
+                                    <img class="img-responsive" src="img/preview-culture.png" alt="Culture version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-culture.html" title="Culture version">Culture version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for historian, architect, literary.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-fashion.html" title="Fashion version">
+                                    <img class="img-responsive" src="img/preview-fashion.png" alt="Fashion version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-fashion.html" title="Fashion version">Fashion version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for beautician, hairdresser, stylist and model.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-legal.html" title="Legal version">
+                                    <img class="img-responsive" src="img/preview-legal.png" alt="Legal version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-legal.html" title="Legal version">Legal version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for lawyer, law office, consultant.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-sm hidden-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="index-science.html" title="Science version">
+                                    <img class="img-responsive" src="img/preview-science.png" alt="Science version">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="index-science.html" title="Science version">Science version</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Ideal for scientist, teacher, professor, university, school, college, research center.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="blog-list.html" title="Blog list page">
+                                    <img class="img-responsive" src="img/preview-blog-list.png" alt="Blog list page">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="blog-list.html" title="Blog list page">Blog list page</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Single page with posts (articles) list.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="blog-list-light.html" title="Blog list page light">
+                                    <img class="img-responsive" src="img/preview-blog-list-light.png" alt="Blog list page">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="blog-list-light.html" title="Blog list page light">Blog list page light</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Single page with posts (articles) list.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="blog-item.html" title="Blog item page">
+                                    <img class="img-responsive" src="img/preview-blog-item.png" alt="Blog item page">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="blog-item.html" title="Blog item page">Blog item page</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Single page with post (article).</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="blog-item-light.html" title="Blog item page light">
+                                    <img class="img-responsive" src="img/preview-blog-item-light.png" alt="Blog item page light">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="blog-item-light.html" title="Blog item page light">Blog item page light</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Single page with post (article) light.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="features.html" title="Features">
+                                    <img class="img-responsive" src="img/preview-features.png" alt="Features">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="features.html" title="Features">Features page</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Modal and tooltip demo.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-sm hidden-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="features-light.html" title="Features light">
+                                    <img class="img-responsive" src="img/preview-features-light.png" alt="Features light">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="features-light.html" title="Features">Features page light</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">Modal and tooltip demo.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-sm visible-xs"></div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="typography.html" title="Typography">
+                                    <img class="img-responsive" src="img/preview-typography.png" alt="Typography">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="typography.html" title="Typography">Typography page</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">HTML elements and bootstrap components.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image-container">
+                                <div class="portfolio-shape"></div>
+                                <a href="typography-light.html" title="Typography light">
+                                    <img class="img-responsive" src="img/preview-typography-light.png" alt="Typography light">
+                                </a>
+                            </div>
+                            <h4 class="portfolio-header">
+                                <a href="typography-light.html" title="Typography light">Typography page light</a>
+                            </h4>
+                            <div class="divider">#</div>
+                            <p class="portfolio-toolbar">HTML elements and bootstrap components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-</div>
+    <footer class="footer text-center" id="follow-us">
+        <div class="section-inner">
+            <div class="container">
+                <ul class="list-inline icons-list-square">
+                    <li>
+                        <a href="https://www.facebook.com/jakub.kwarcinski" class="icon-circle-container">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li><li>
+                        <a href="https://github.com/kwarc87" class="icon-circle-container">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li><li>
+                        <a href="https://google.com/+JakubKwarciński" class="icon-circle-container">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </li><li>
+                        <a href="https://www.youtube.com/user/sernick87" class="icon-circle-container">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li><li>
+                        <a href="http://www.last.fm/pl/user/kwarc87" class="icon-circle-container">
+                            <i class="fa fa-lastfm" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p> &copy; 2016 <a href="http://jakubkwarcinski.pl" title="Jakub Kwarciński - Frontend Developer">Jakub Kwarciński</a></p>
+            </div>
+        </div>
+    </footer>
 
-<hr>
-<div class="w3-center">
-  <h2>Pagination</h2>
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
-      <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+    <div id="to-top" class="to-top">
+        <a href="#" class="To the top" title="To the top">
+            <i class="fa fa-angle-up"></i>
+        </a>
     </div>
-  </div>
-</div>
-<br>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-dark w3-padding-16">
-  <h3>Footer</h3>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-  <p>Remember to check out our  <a href="w3css_references.asp" class="w3-btn w3-theme-light" target="_blank">W3.CSS Reference</a></p>
-</footer>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
 
-<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-<script>
-// Side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "100%";
-  x.style.fontSize = "40px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
 
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
-
-var mybtn = document.getElementsByClassName("testbtn")[0];
-mybtn.click();
-
-// Accordions
-function myAccFunc(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// Slideshows
-var slideIndex = 1;
-
-function plusDivs(n) {
-  slideIndex = slideIndex + n;
-  showDivs(slideIndex);
-}
-
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-
-showDivs(1);
-
-// Progress Bars
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width == 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
-</script>
+    <!-- Custom javascript -->
+    <script type="text/javascript" src="js/custom.min.js"></script>
 
 </body>
 </html>
