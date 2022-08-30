@@ -7841,7 +7841,7 @@ body {
   border: 3px solid #FFF;
 }
 .profile-image .profile-image-inner {
-  max-width: 500px;
+  max-width: 5000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -7850,7 +7850,7 @@ body {
   opacity: 0.15;
   filter: alpha(opacity=15);
 }
-@media (max-width: 767px) {
+@media (max-width: 7670px) {
   .profile-image .profile-image-inner {
     position: relative;
     margin-bottom: 20px;
@@ -7858,7 +7858,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .profile-image img {
-    max-width: 300px;
+    max-width: 3000px;
   }
 }
 @media (min-width: 768px) {
