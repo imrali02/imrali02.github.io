@@ -7828,16 +7828,16 @@ body {
 }
 .profile-image .profile-border-outer {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   left: 0px;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.15);
   padding: 10px;
 }
 .profile-image .profile-border-outer .profile-border-inner {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   border: 3px solid #FFF;
 }
 .profile-image .profile-image-inner {
